@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 from setuptools import find_packages, setup
+from testpkg import VERSION
 
 
 with open('requirements.txt') as f:
@@ -8,7 +9,7 @@ with open('requirements.txt') as f:
 
 setup(
     name='testpkg',
-    version='1.0',
+    version=VERSION,
     author='Luc DURON',
     author_email='l.duron@cnr.tm.fr',
     packages=find_packages(),
