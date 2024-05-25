@@ -1,6 +1,5 @@
 import argparse
 import logging
-import os
 
 from testpkg.base import log
 
@@ -12,6 +11,3 @@ parser.add_argument('--min_level', help='logging minimum level', default='DEBUG'
 args = parser.parse_args()
 
 log(args.min_level, logger)
-
-with open(os.path.join('testpkg', 'data', 'CrueConfigMetier.xml'), 'r') as filein:
-    print(filein)
