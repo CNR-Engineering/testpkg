@@ -11,6 +11,6 @@ def log(min_level, logger):
     logger.error("this is an error message")
     logger.critical("this is a critical message")
 
-    with files('testpkg.data').joinpath('CrueConfigMetier.xml').open('r') as filein:
+    with files('testpkg').joinpath('data/CrueConfigMetier.xml').open('r') as filein:
         print(type(filein))
         print(filein)
