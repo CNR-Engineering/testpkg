@@ -13,6 +13,7 @@ setup(
     author='Luc DURON',
     author_email='l.duron@cnr.tm.fr',
     packages=find_packages(),
+    package_data={'testpkg': ['data/CrueConfigMetier.xml']},
     include_package_data=True,  # includes all non `.py` files found inside package directory (see MANIFEST.in)
     install_requires=requirements,
     description='Minimal Python package with a data file',
