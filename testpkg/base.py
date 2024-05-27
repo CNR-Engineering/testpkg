@@ -1,8 +1,7 @@
 import coloredlogs
 from importlib import resources as impresources
-import os
 
-from . import data
+from testpkg import data as testpkg_data
 
 
 def log(min_level, logger):
@@ -14,5 +13,5 @@ def log(min_level, logger):
     logger.error("this is an error message")
     logger.critical("this is a critical message")
 
-    with open(impresources.files(data) / 'CrueConfigMetier.xml', 'r') as filein:
+    with open(impresources.files(testpkg_data).joinpath('CrueConfigMetier.xml'), 'r') as filein:
         print(filein)
